@@ -2,6 +2,7 @@
 {
     partial class Parcial_1_Conversor
     {
+        mi parcial;
         private System.ComponentModel.IContainer components = null;
 
         protected override void Dispose(bool disposing)
