@@ -1,8 +1,8 @@
-﻿CREATE TABLE [dbo].[matriculas] (
-    [idMatriula ] INT       NOT NULL,
-    [idAlumno]    INT       NOT NULL,
-    [fecha ]      DATE      NOT NULL,
-    [periodo ]    CHAR (10) NULL,
-    PRIMARY KEY CLUSTERED ([idMatriula ] ASC)
+﻿CREATE TABLE [dbo].[materias] (
+    [idmateria ] INT        NOT NULL,
+    [codigo ]    SMALLINT   NOT NULL,
+    [nombre]     CHAR (100) NOT NULL,
+    [uv]         SMALLINT   NOT NULL,
+    PRIMARY KEY CLUSTERED ([idmateria ] ASC)
 );
- 
+
