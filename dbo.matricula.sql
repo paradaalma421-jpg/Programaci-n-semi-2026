@@ -1,4 +1,4 @@
-﻿/*
+﻿ /*
 Script de implementación para db_Academca.mdf
 
 Una herramienta generó este código.
