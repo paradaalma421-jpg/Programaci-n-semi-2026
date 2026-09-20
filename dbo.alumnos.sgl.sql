@@ -5,4 +5,4 @@
     [periodo ]    CHAR (10) NULL,
     PRIMARY KEY CLUSTERED ([idMatriula ] ASC)
 );    
-  
+    
