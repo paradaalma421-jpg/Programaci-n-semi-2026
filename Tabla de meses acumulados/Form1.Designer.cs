@@ -29,212 +29,278 @@ namespace Tabla_de_meses_acumulados
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.lblMontoInicial = new System.Windows.Forms.Label();
-            this.lblAporteMensual = new System.Windows.Forms.Label();
-            this.lblTasaAnual = new System.Windows.Forms.Label();
-            this.txtMontoInicial = new System.Windows.Forms.TextBox();
-            this.txtAporteMensual = new System.Windows.Forms.TextBox();
-            this.txtTasaAnual = new System.Windows.Forms.TextBox();
-            this.txtNumMeses = new System.Windows.Forms.TextBox();
-            this.lblNumMeses = new System.Windows.Forms.Label();
-            this.btnLimpiarMeses = new System.Windows.Forms.Button();
-            this.btnGenerarTabla = new System.Windows.Forms.Button();
-            this.dgvAcumulado = new System.Windows.Forms.DataGridView();
-            this.chrtAcumulado = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.grbNavegacion = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnPrimeroAlumno = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAcumulado)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chrtAcumulado)).BeginInit();
+            this.txtCodigoAlumno = new System.Windows.Forms.TextBox();
+            this.lblCodicgoAlumno = new System.Windows.Forms.Label();
+            this.txtNombreAlumno = new System.Windows.Forms.TextBox();
+            this.grbDatos = new System.Windows.Forms.GroupBox();
+            this.lblCodigoAlumno = new System.Windows.Forms.Label();
+            this.lblDirrecionAlumno = new System.Windows.Forms.Label();
+            this.txtDirrecionAlumno = new System.Windows.Forms.TextBox();
+            this.txtTelefonoAlmno = new System.Windows.Forms.TextBox();
+            this.lblTelefonoAlumno = new System.Windows.Forms.Label();
+            this.lblEmilAlumno = new System.Windows.Forms.Label();
+            this.txtEmailAlumno = new System.Windows.Forms.TextBox();
+            this.btnAnteriorAlumno = new System.Windows.Forms.Button();
+            this.btnSiguienteAlumno = new System.Windows.Forms.Button();
+            this.btnUltimoAluno = new System.Windows.Forms.Button();
+            this.btnAgregarAlumno = new System.Windows.Forms.Button();
+            this.btnModificarAlumno = new System.Windows.Forms.Button();
+            this.lblRegistroAlumno = new System.Windows.Forms.Label();
+            this.grbNavegacion.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.grbDatos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblMontoInicial
+            // grbNavegacion
             // 
-            this.lblMontoInicial.AutoSize = true;
-            this.lblMontoInicial.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMontoInicial.Location = new System.Drawing.Point(97, 63);
-            this.lblMontoInicial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblMontoInicial.Name = "lblMontoInicial";
-            this.lblMontoInicial.Size = new System.Drawing.Size(101, 17);
-            this.lblMontoInicial.TabIndex = 0;
-            this.lblMontoInicial.Text = "MontoInicial :";
+            this.grbNavegacion.Controls.Add(this.lblRegistroAlumno);
+            this.grbNavegacion.Controls.Add(this.btnUltimoAluno);
+            this.grbNavegacion.Controls.Add(this.btnSiguienteAlumno);
+            this.grbNavegacion.Controls.Add(this.btnAnteriorAlumno);
+            this.grbNavegacion.Controls.Add(this.btnPrimeroAlumno);
+            this.grbNavegacion.Location = new System.Drawing.Point(12, 250);
+            this.grbNavegacion.Name = "grbNavegacion";
+            this.grbNavegacion.Size = new System.Drawing.Size(347, 104);
+            this.grbNavegacion.TabIndex = 1;
+            this.grbNavegacion.TabStop = false;
+            this.grbNavegacion.Text = "Navegacion";
             // 
-            // lblAporteMensual
+            // groupBox3
             // 
-            this.lblAporteMensual.AutoSize = true;
-            this.lblAporteMensual.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAporteMensual.Location = new System.Drawing.Point(97, 119);
-            this.lblAporteMensual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAporteMensual.Name = "lblAporteMensual";
-            this.lblAporteMensual.Size = new System.Drawing.Size(120, 17);
-            this.lblAporteMensual.TabIndex = 1;
-            this.lblAporteMensual.Text = "AporteMensual :";
+            this.groupBox3.Controls.Add(this.btnModificarAlumno);
+            this.groupBox3.Controls.Add(this.btnAgregarAlumno);
+            this.groupBox3.Location = new System.Drawing.Point(365, 250);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(237, 104);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Edicion ";
             // 
-            // lblTasaAnual
+            // btnPrimeroAlumno
             // 
-            this.lblTasaAnual.AutoSize = true;
-            this.lblTasaAnual.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTasaAnual.Location = new System.Drawing.Point(97, 180);
-            this.lblTasaAnual.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTasaAnual.Name = "lblTasaAnual";
-            this.lblTasaAnual.Size = new System.Drawing.Size(85, 17);
-            this.lblTasaAnual.TabIndex = 2;
-            this.lblTasaAnual.Text = "TasaAnual :";
-            // 
-            // txtMontoInicial
-            // 
-            this.txtMontoInicial.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMontoInicial.Location = new System.Drawing.Point(200, 63);
-            this.txtMontoInicial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtMontoInicial.Name = "txtMontoInicial";
-            this.txtMontoInicial.Size = new System.Drawing.Size(76, 24);
-            this.txtMontoInicial.TabIndex = 3;
-            // 
-            // txtAporteMensual
-            // 
-            this.txtAporteMensual.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAporteMensual.Location = new System.Drawing.Point(211, 114);
-            this.txtAporteMensual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtAporteMensual.Name = "txtAporteMensual";
-            this.txtAporteMensual.Size = new System.Drawing.Size(76, 24);
-            this.txtAporteMensual.TabIndex = 4;
-            // 
-            // txtTasaAnual
-            // 
-            this.txtTasaAnual.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTasaAnual.Location = new System.Drawing.Point(200, 176);
-            this.txtTasaAnual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtTasaAnual.Name = "txtTasaAnual";
-            this.txtTasaAnual.Size = new System.Drawing.Size(76, 24);
-            this.txtTasaAnual.TabIndex = 5;
-            // 
-            // txtNumMeses
-            // 
-            this.txtNumMeses.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumMeses.Location = new System.Drawing.Point(200, 224);
-            this.txtNumMeses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtNumMeses.Name = "txtNumMeses";
-            this.txtNumMeses.Size = new System.Drawing.Size(76, 24);
-            this.txtNumMeses.TabIndex = 6;
-            // 
-            // lblNumMeses
-            // 
-            this.lblNumMeses.AutoSize = true;
-            this.lblNumMeses.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumMeses.Location = new System.Drawing.Point(97, 224);
-            this.lblNumMeses.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblNumMeses.Name = "lblNumMeses";
-            this.lblNumMeses.Size = new System.Drawing.Size(93, 17);
-            this.lblNumMeses.TabIndex = 7;
-            this.lblNumMeses.Text = "NumMeses :";
-            // 
-            // btnLimpiarMeses
-            // 
-            this.btnLimpiarMeses.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarMeses.Location = new System.Drawing.Point(478, 74);
-            this.btnLimpiarMeses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnLimpiarMeses.Name = "btnLimpiarMeses";
-            this.btnLimpiarMeses.Size = new System.Drawing.Size(64, 33);
-            this.btnLimpiarMeses.TabIndex = 8;
-            this.btnLimpiarMeses.Text = "Limpiar";
-            this.btnLimpiarMeses.UseVisualStyleBackColor = true;
-            this.btnLimpiarMeses.Click += new System.EventHandler(this.btnLimpiarMeses_Click);
-            // 
-            // btnGenerarTabla
-            // 
-            this.btnGenerarTabla.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerarTabla.Location = new System.Drawing.Point(403, 74);
-            this.btnGenerarTabla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnGenerarTabla.Name = "btnGenerarTabla";
-            this.btnGenerarTabla.Size = new System.Drawing.Size(66, 33);
-            this.btnGenerarTabla.TabIndex = 9;
-            this.btnGenerarTabla.Text = "Generar";
-            this.btnGenerarTabla.UseVisualStyleBackColor = true;
-            this.btnGenerarTabla.Click += new System.EventHandler(this.btnGenerarTabla_Click);
-            // 
-            // dgvAcumulado
-            // 
-            this.dgvAcumulado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAcumulado.Location = new System.Drawing.Point(1, 268);
-            this.dgvAcumulado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dgvAcumulado.Name = "dgvAcumulado";
-            this.dgvAcumulado.RowHeadersWidth = 51;
-            this.dgvAcumulado.RowTemplate.Height = 24;
-            this.dgvAcumulado.Size = new System.Drawing.Size(359, 88);
-            this.dgvAcumulado.TabIndex = 10;
-            // 
-            // chrtAcumulado
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chrtAcumulado.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chrtAcumulado.Legends.Add(legend1);
-            this.chrtAcumulado.Location = new System.Drawing.Point(366, 112);
-            this.chrtAcumulado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.chrtAcumulado.Name = "chrtAcumulado";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chrtAcumulado.Series.Add(series1);
-            this.chrtAcumulado.Size = new System.Drawing.Size(225, 244);
-            this.chrtAcumulado.TabIndex = 11;
-            this.chrtAcumulado.Text = "chart1";
+            this.btnPrimeroAlumno.Location = new System.Drawing.Point(-6, 19);
+            this.btnPrimeroAlumno.Name = "btnPrimeroAlumno";
+            this.btnPrimeroAlumno.Size = new System.Drawing.Size(75, 23);
+            this.btnPrimeroAlumno.TabIndex = 0;
+            this.btnPrimeroAlumno.Text = "|<";
+            this.btnPrimeroAlumno.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(196, 22);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(6, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 17);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Tabla de meses acumulados";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtCodigoAlumno
+            // 
+            this.txtCodigoAlumno.Location = new System.Drawing.Point(62, 19);
+            this.txtCodigoAlumno.Name = "txtCodigoAlumno";
+            this.txtCodigoAlumno.Size = new System.Drawing.Size(179, 20);
+            this.txtCodigoAlumno.TabIndex = 1;
+            // 
+            // lblCodicgoAlumno
+            // 
+            this.lblCodicgoAlumno.AutoSize = true;
+            this.lblCodicgoAlumno.Location = new System.Drawing.Point(12, 26);
+            this.lblCodicgoAlumno.Name = "lblCodicgoAlumno";
+            this.lblCodicgoAlumno.Size = new System.Drawing.Size(49, 13);
+            this.lblCodicgoAlumno.TabIndex = 2;
+            this.lblCodicgoAlumno.Text = "CODIGO";
+            // 
+            // txtNombreAlumno
+            // 
+            this.txtNombreAlumno.Location = new System.Drawing.Point(62, 56);
+            this.txtNombreAlumno.Name = "txtNombreAlumno";
+            this.txtNombreAlumno.Size = new System.Drawing.Size(292, 20);
+            this.txtNombreAlumno.TabIndex = 3;
+            // 
+            // grbDatos
+            // 
+            this.grbDatos.Controls.Add(this.txtEmailAlumno);
+            this.grbDatos.Controls.Add(this.lblEmilAlumno);
+            this.grbDatos.Controls.Add(this.lblTelefonoAlumno);
+            this.grbDatos.Controls.Add(this.txtTelefonoAlmno);
+            this.grbDatos.Controls.Add(this.txtDirrecionAlumno);
+            this.grbDatos.Controls.Add(this.lblDirrecionAlumno);
+            this.grbDatos.Controls.Add(this.lblCodigoAlumno);
+            this.grbDatos.Controls.Add(this.txtNombreAlumno);
+            this.grbDatos.Controls.Add(this.lblCodicgoAlumno);
+            this.grbDatos.Controls.Add(this.txtCodigoAlumno);
+            this.grbDatos.Controls.Add(this.label1);
+            this.grbDatos.Location = new System.Drawing.Point(12, 12);
+            this.grbDatos.Name = "grbDatos";
+            this.grbDatos.Size = new System.Drawing.Size(560, 219);
+            this.grbDatos.TabIndex = 0;
+            this.grbDatos.TabStop = false;
+            this.grbDatos.Text = "DATOS ";
+            this.grbDatos.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblCodigoAlumno
+            // 
+            this.lblCodigoAlumno.AutoSize = true;
+            this.lblCodigoAlumno.Location = new System.Drawing.Point(12, 63);
+            this.lblCodigoAlumno.Name = "lblCodigoAlumno";
+            this.lblCodigoAlumno.Size = new System.Drawing.Size(54, 13);
+            this.lblCodigoAlumno.TabIndex = 4;
+            this.lblCodigoAlumno.Text = "NOMBRE";
+            // 
+            // lblDirrecionAlumno
+            // 
+            this.lblDirrecionAlumno.AutoSize = true;
+            this.lblDirrecionAlumno.Location = new System.Drawing.Point(12, 94);
+            this.lblDirrecionAlumno.Name = "lblDirrecionAlumno";
+            this.lblDirrecionAlumno.Size = new System.Drawing.Size(67, 13);
+            this.lblDirrecionAlumno.TabIndex = 5;
+            this.lblDirrecionAlumno.Text = "DIRRECION";
+            // 
+            // txtDirrecionAlumno
+            // 
+            this.txtDirrecionAlumno.Location = new System.Drawing.Point(75, 94);
+            this.txtDirrecionAlumno.Name = "txtDirrecionAlumno";
+            this.txtDirrecionAlumno.Size = new System.Drawing.Size(292, 20);
+            this.txtDirrecionAlumno.TabIndex = 6;
+            // 
+            // txtTelefonoAlmno
+            // 
+            this.txtTelefonoAlmno.Location = new System.Drawing.Point(87, 121);
+            this.txtTelefonoAlmno.Name = "txtTelefonoAlmno";
+            this.txtTelefonoAlmno.Size = new System.Drawing.Size(292, 20);
+            this.txtTelefonoAlmno.TabIndex = 7;
+            // 
+            // lblTelefonoAlumno
+            // 
+            this.lblTelefonoAlumno.AutoSize = true;
+            this.lblTelefonoAlumno.Location = new System.Drawing.Point(17, 128);
+            this.lblTelefonoAlumno.Name = "lblTelefonoAlumno";
+            this.lblTelefonoAlumno.Size = new System.Drawing.Size(64, 13);
+            this.lblTelefonoAlumno.TabIndex = 8;
+            this.lblTelefonoAlumno.Text = "TELEFONO";
+            // 
+            // lblEmilAlumno
+            // 
+            this.lblEmilAlumno.AutoSize = true;
+            this.lblEmilAlumno.Location = new System.Drawing.Point(27, 164);
+            this.lblEmilAlumno.Name = "lblEmilAlumno";
+            this.lblEmilAlumno.Size = new System.Drawing.Size(39, 13);
+            this.lblEmilAlumno.TabIndex = 9;
+            this.lblEmilAlumno.Text = "EMAIL";
+            // 
+            // txtEmailAlumno
+            // 
+            this.txtEmailAlumno.Location = new System.Drawing.Point(87, 161);
+            this.txtEmailAlumno.Name = "txtEmailAlumno";
+            this.txtEmailAlumno.Size = new System.Drawing.Size(179, 20);
+            this.txtEmailAlumno.TabIndex = 10;
+            // 
+            // btnAnteriorAlumno
+            // 
+            this.btnAnteriorAlumno.Location = new System.Drawing.Point(62, 19);
+            this.btnAnteriorAlumno.Name = "btnAnteriorAlumno";
+            this.btnAnteriorAlumno.Size = new System.Drawing.Size(75, 23);
+            this.btnAnteriorAlumno.TabIndex = 1;
+            this.btnAnteriorAlumno.TabStop = false;
+            this.btnAnteriorAlumno.Text = "<";
+            this.btnAnteriorAlumno.UseVisualStyleBackColor = true;
+            this.btnAnteriorAlumno.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnSiguienteAlumno
+            // 
+            this.btnSiguienteAlumno.Location = new System.Drawing.Point(200, 24);
+            this.btnSiguienteAlumno.Name = "btnSiguienteAlumno";
+            this.btnSiguienteAlumno.Size = new System.Drawing.Size(75, 23);
+            this.btnSiguienteAlumno.TabIndex = 2;
+            this.btnSiguienteAlumno.Text = ">|";
+            this.btnSiguienteAlumno.UseVisualStyleBackColor = true;
+            // 
+            // btnUltimoAluno
+            // 
+            this.btnUltimoAluno.Location = new System.Drawing.Point(272, 24);
+            this.btnUltimoAluno.Name = "btnUltimoAluno";
+            this.btnUltimoAluno.Size = new System.Drawing.Size(75, 23);
+            this.btnUltimoAluno.TabIndex = 3;
+            this.btnUltimoAluno.TabStop = false;
+            this.btnUltimoAluno.Text = ">";
+            this.btnUltimoAluno.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarAlumno
+            // 
+            this.btnAgregarAlumno.Location = new System.Drawing.Point(6, 19);
+            this.btnAgregarAlumno.Name = "btnAgregarAlumno";
+            this.btnAgregarAlumno.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarAlumno.TabIndex = 2;
+            this.btnAgregarAlumno.TabStop = false;
+            this.btnAgregarAlumno.Text = "AGREGAR";
+            this.btnAgregarAlumno.UseVisualStyleBackColor = true;
+            // 
+            // btnModificarAlumno
+            // 
+            this.btnModificarAlumno.Location = new System.Drawing.Point(87, 19);
+            this.btnModificarAlumno.Name = "btnModificarAlumno";
+            this.btnModificarAlumno.Size = new System.Drawing.Size(113, 23);
+            this.btnModificarAlumno.TabIndex = 3;
+            this.btnModificarAlumno.TabStop = false;
+            this.btnModificarAlumno.Text = "MODIFICAR";
+            this.btnModificarAlumno.UseVisualStyleBackColor = true;
+            // 
+            // lblRegistroAlumno
+            // 
+            this.lblRegistroAlumno.AutoSize = true;
+            this.lblRegistroAlumno.Location = new System.Drawing.Point(143, 24);
+            this.lblRegistroAlumno.Name = "lblRegistroAlumno";
+            this.lblRegistroAlumno.Size = new System.Drawing.Size(36, 13);
+            this.lblRegistroAlumno.TabIndex = 10;
+            this.lblRegistroAlumno.Text = "x de n";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.chrtAcumulado);
-            this.Controls.Add(this.dgvAcumulado);
-            this.Controls.Add(this.btnGenerarTabla);
-            this.Controls.Add(this.btnLimpiarMeses);
-            this.Controls.Add(this.lblNumMeses);
-            this.Controls.Add(this.txtNumMeses);
-            this.Controls.Add(this.txtTasaAnual);
-            this.Controls.Add(this.txtAporteMensual);
-            this.Controls.Add(this.txtMontoInicial);
-            this.Controls.Add(this.lblTasaAnual);
-            this.Controls.Add(this.lblAporteMensual);
-            this.Controls.Add(this.lblMontoInicial);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.grbNavegacion);
+            this.Controls.Add(this.grbDatos);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAcumulado)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chrtAcumulado)).EndInit();
+            this.Text = "registro de alumnos ";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.grbNavegacion.ResumeLayout(false);
+            this.grbNavegacion.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.grbDatos.ResumeLayout(false);
+            this.grbDatos.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblMontoInicial;
-        private System.Windows.Forms.Label lblAporteMensual;
-        private System.Windows.Forms.Label lblTasaAnual;
-        private System.Windows.Forms.TextBox txtMontoInicial;
-        private System.Windows.Forms.TextBox txtAporteMensual;
-        private System.Windows.Forms.TextBox txtTasaAnual;
-        private System.Windows.Forms.TextBox txtNumMeses;
-        private System.Windows.Forms.Label lblNumMeses;
-        private System.Windows.Forms.Button btnLimpiarMeses;
-        private System.Windows.Forms.Button btnGenerarTabla;
-        private System.Windows.Forms.DataGridView dgvAcumulado;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chrtAcumulado;
+        private System.Windows.Forms.GroupBox grbNavegacion;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnPrimeroAlumno;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCodigoAlumno;
+        private System.Windows.Forms.Label lblCodicgoAlumno;
+        private System.Windows.Forms.TextBox txtNombreAlumno;
+        private System.Windows.Forms.GroupBox grbDatos;
+        private System.Windows.Forms.TextBox txtTelefonoAlmno;
+        private System.Windows.Forms.TextBox txtDirrecionAlumno;
+        private System.Windows.Forms.Label lblDirrecionAlumno;
+        private System.Windows.Forms.Label lblCodigoAlumno;
+        private System.Windows.Forms.Label lblTelefonoAlumno;
+        private System.Windows.Forms.TextBox txtEmailAlumno;
+        private System.Windows.Forms.Label lblEmilAlumno;
+        private System.Windows.Forms.Button btnAnteriorAlumno;
+        private System.Windows.Forms.Label lblRegistroAlumno;
+        private System.Windows.Forms.Button btnUltimoAluno;
+        private System.Windows.Forms.Button btnSiguienteAlumno;
+        private System.Windows.Forms.Button btnModificarAlumno;
+        private System.Windows.Forms.Button btnAgregarAlumno;
     }
 }
 
