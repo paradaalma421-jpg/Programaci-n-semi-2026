@@ -29,241 +29,250 @@ namespace calculadora_basica
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNum1 = new System.Windows.Forms.TextBox();
-            this.btnNum1 = new System.Windows.Forms.Button();
-            this.lblNum1 = new System.Windows.Forms.Label();
-            this.lblnum2 = new System.Windows.Forms.Label();
-            this.txtNum2 = new System.Windows.Forms.TextBox();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl4 = new System.Windows.Forms.Label();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.rdbsuma = new System.Windows.Forms.RadioButton();
-            this.grbopciones = new System.Windows.Forms.GroupBox();
-            this.rdbresta = new System.Windows.Forms.RadioButton();
-            this.rdbdivi = new System.Windows.Forms.RadioButton();
-            this.rdbmulti = new System.Windows.Forms.RadioButton();
-            this.rdbexpo = new System.Windows.Forms.RadioButton();
-            this.rdbraiz = new System.Windows.Forms.RadioButton();
-            this.rdbfactrial = new System.Windows.Forms.RadioButton();
-            this.cbonum1 = new System.Windows.Forms.ComboBox();
-            this.lbl5 = new System.Windows.Forms.Label();
-            this.grbopciones.SuspendLayout();
+            this.lbllblDirrecionAlumno = new System.Windows.Forms.Label();
+            this.grbDatos = new System.Windows.Forms.GroupBox();
+            this.grbNavegacion = new System.Windows.Forms.GroupBox();
+            this.grbEdicion = new System.Windows.Forms.GroupBox();
+            this.lblCodigoAalumno = new System.Windows.Forms.Label();
+            this.btnCodigo = new System.Windows.Forms.Button();
+            this.lblNombreAlumno = new System.Windows.Forms.Label();
+            this.btnNombre = new System.Windows.Forms.Button();
+            this.btnDireccion = new System.Windows.Forms.Button();
+            this.lblDirrecionAlumno = new System.Windows.Forms.Label();
+            this.lblTelefonoAlumno = new System.Windows.Forms.Label();
+            this.btnTelefono = new System.Windows.Forms.Button();
+            this.lblEmailAlumno = new System.Windows.Forms.Label();
+            this.btnEmail = new System.Windows.Forms.Button();
+            this.btnPrimerAlumno = new System.Windows.Forms.Button();
+            this.btnAnteriorAlumno = new System.Windows.Forms.Button();
+            this.btnUltimoAlumno = new System.Windows.Forms.Button();
+            this.btnSiguienteAlumno = new System.Windows.Forms.Button();
+            this.btnAgregarAlumo = new System.Windows.Forms.Button();
+            this.btnModificarAlumno = new System.Windows.Forms.Button();
+            this.lblRegristroalmno = new System.Windows.Forms.Label();
+            this.grbDatos.SuspendLayout();
+            this.grbNavegacion.SuspendLayout();
+            this.grbEdicion.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtNum1
+            // lbllblDirrecionAlumno
             // 
-            this.txtNum1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNum1.Location = new System.Drawing.Point(273, 90);
-            this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(212, 34);
-            this.txtNum1.TabIndex = 0;
+            this.lbllblDirrecionAlumno.AutoSize = true;
+            this.lbllblDirrecionAlumno.Location = new System.Drawing.Point(400, 177);
+            this.lbllblDirrecionAlumno.Name = "lbllblDirrecionAlumno";
+            this.lbllblDirrecionAlumno.Size = new System.Drawing.Size(12, 13);
+            this.lbllblDirrecionAlumno.TabIndex = 12;
+            this.lbllblDirrecionAlumno.Text = "z";
             // 
-            // btnNum1
+            // grbDatos
             // 
-            this.btnNum1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNum1.Location = new System.Drawing.Point(231, 251);
-            this.btnNum1.Name = "btnNum1";
-            this.btnNum1.Size = new System.Drawing.Size(213, 80);
-            this.btnNum1.TabIndex = 1;
-            this.btnNum1.Text = "calcular";
-            this.btnNum1.UseVisualStyleBackColor = true;
-            this.btnNum1.Click += new System.EventHandler(this.btnNum1_Click);
+            this.grbDatos.Controls.Add(this.btnEmail);
+            this.grbDatos.Controls.Add(this.lblEmailAlumno);
+            this.grbDatos.Controls.Add(this.btnTelefono);
+            this.grbDatos.Controls.Add(this.lblTelefonoAlumno);
+            this.grbDatos.Controls.Add(this.lblDirrecionAlumno);
+            this.grbDatos.Controls.Add(this.btnDireccion);
+            this.grbDatos.Controls.Add(this.btnNombre);
+            this.grbDatos.Controls.Add(this.lblNombreAlumno);
+            this.grbDatos.Controls.Add(this.btnCodigo);
+            this.grbDatos.Controls.Add(this.lblCodigoAalumno);
+            this.grbDatos.Location = new System.Drawing.Point(12, 12);
+            this.grbDatos.Name = "grbDatos";
+            this.grbDatos.Size = new System.Drawing.Size(526, 251);
+            this.grbDatos.TabIndex = 13;
+            this.grbDatos.TabStop = false;
+            this.grbDatos.Text = "DATOS";
             // 
-            // lblNum1
+            // grbNavegacion
             // 
-            this.lblNum1.AutoSize = true;
-            this.lblNum1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum1.Location = new System.Drawing.Point(182, 97);
-            this.lblNum1.Name = "lblNum1";
-            this.lblNum1.Size = new System.Drawing.Size(77, 27);
-            this.lblNum1.TabIndex = 2;
-            this.lblNum1.Text = "Num1:";
+            this.grbNavegacion.Controls.Add(this.lblRegristroalmno);
+            this.grbNavegacion.Controls.Add(this.btnSiguienteAlumno);
+            this.grbNavegacion.Controls.Add(this.btnUltimoAlumno);
+            this.grbNavegacion.Controls.Add(this.btnAnteriorAlumno);
+            this.grbNavegacion.Controls.Add(this.btnPrimerAlumno);
+            this.grbNavegacion.Location = new System.Drawing.Point(12, 269);
+            this.grbNavegacion.Name = "grbNavegacion";
+            this.grbNavegacion.Size = new System.Drawing.Size(261, 100);
+            this.grbNavegacion.TabIndex = 14;
+            this.grbNavegacion.TabStop = false;
+            this.grbNavegacion.Text = "NAVEGACION";
             // 
-            // lblnum2
+            // grbEdicion
             // 
-            this.lblnum2.AutoSize = true;
-            this.lblnum2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnum2.Location = new System.Drawing.Point(182, 145);
-            this.lblnum2.Name = "lblnum2";
-            this.lblnum2.Size = new System.Drawing.Size(77, 27);
-            this.lblnum2.TabIndex = 3;
-            this.lblnum2.Text = "Num2:";
+            this.grbEdicion.Controls.Add(this.btnModificarAlumno);
+            this.grbEdicion.Controls.Add(this.btnAgregarAlumo);
+            this.grbEdicion.Location = new System.Drawing.Point(279, 269);
+            this.grbEdicion.Name = "grbEdicion";
+            this.grbEdicion.Size = new System.Drawing.Size(235, 100);
+            this.grbEdicion.TabIndex = 15;
+            this.grbEdicion.TabStop = false;
+            this.grbEdicion.Text = "EDICION";
             // 
-            // txtNum2
+            // lblCodigoAalumno
             // 
-            this.txtNum2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNum2.Location = new System.Drawing.Point(273, 142);
-            this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(212, 34);
-            this.txtNum2.TabIndex = 4;
+            this.lblCodigoAalumno.AutoSize = true;
+            this.lblCodigoAalumno.Location = new System.Drawing.Point(16, 24);
+            this.lblCodigoAalumno.Name = "lblCodigoAalumno";
+            this.lblCodigoAalumno.Size = new System.Drawing.Size(49, 13);
+            this.lblCodigoAalumno.TabIndex = 0;
+            this.lblCodigoAalumno.Text = "CODIGO";
             // 
-            // lbl3
+            // btnCodigo
             // 
-            this.lbl3.AutoSize = true;
-            this.lbl3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(182, 203);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(122, 27);
-            this.lbl3.TabIndex = 5;
-            this.lbl3.Text = "Respuesta: ";
+            this.btnCodigo.Location = new System.Drawing.Point(71, 19);
+            this.btnCodigo.Name = "btnCodigo";
+            this.btnCodigo.Size = new System.Drawing.Size(158, 23);
+            this.btnCodigo.TabIndex = 1;
+            this.btnCodigo.UseVisualStyleBackColor = true;
             // 
-            // lbl4
+            // lblNombreAlumno
             // 
-            this.lbl4.AutoSize = true;
-            this.lbl4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(297, 203);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(22, 27);
-            this.lbl4.TabIndex = 6;
-            this.lbl4.Text = "?";
+            this.lblNombreAlumno.AutoSize = true;
+            this.lblNombreAlumno.Location = new System.Drawing.Point(16, 55);
+            this.lblNombreAlumno.Name = "lblNombreAlumno";
+            this.lblNombreAlumno.Size = new System.Drawing.Size(54, 13);
+            this.lblNombreAlumno.TabIndex = 2;
+            this.lblNombreAlumno.Text = "NOMBRE";
             // 
-            // btn2
+            // btnNombre
             // 
-            this.btn2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(231, 358);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(213, 80);
-            this.btn2.TabIndex = 7;
-            this.btn2.Text = "Salir";
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btnNombre.Location = new System.Drawing.Point(71, 50);
+            this.btnNombre.Name = "btnNombre";
+            this.btnNombre.Size = new System.Drawing.Size(158, 23);
+            this.btnNombre.TabIndex = 3;
+            this.btnNombre.UseVisualStyleBackColor = true;
             // 
-            // rdbsuma
+            // btnDireccion
             // 
-            this.rdbsuma.AutoSize = true;
-            this.rdbsuma.Checked = true;
-            this.rdbsuma.Location = new System.Drawing.Point(6, 31);
-            this.rdbsuma.Name = "rdbsuma";
-            this.rdbsuma.Size = new System.Drawing.Size(63, 21);
-            this.rdbsuma.TabIndex = 8;
-            this.rdbsuma.TabStop = true;
-            this.rdbsuma.Text = "suma";
-            this.rdbsuma.UseVisualStyleBackColor = true;
+            this.btnDireccion.Location = new System.Drawing.Point(88, 84);
+            this.btnDireccion.Name = "btnDireccion";
+            this.btnDireccion.Size = new System.Drawing.Size(176, 23);
+            this.btnDireccion.TabIndex = 4;
+            this.btnDireccion.UseVisualStyleBackColor = true;
             // 
-            // grbopciones
+            // lblDirrecionAlumno
             // 
-            this.grbopciones.Controls.Add(this.rdbfactrial);
-            this.grbopciones.Controls.Add(this.rdbexpo);
-            this.grbopciones.Controls.Add(this.rdbraiz);
-            this.grbopciones.Controls.Add(this.rdbdivi);
-            this.grbopciones.Controls.Add(this.rdbmulti);
-            this.grbopciones.Controls.Add(this.rdbresta);
-            this.grbopciones.Controls.Add(this.rdbsuma);
-            this.grbopciones.Location = new System.Drawing.Point(559, 107);
-            this.grbopciones.Name = "grbopciones";
-            this.grbopciones.Size = new System.Drawing.Size(200, 331);
-            this.grbopciones.TabIndex = 9;
-            this.grbopciones.TabStop = false;
-            this.grbopciones.Text = "Opciones ";
-            this.grbopciones.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.lblDirrecionAlumno.AutoSize = true;
+            this.lblDirrecionAlumno.Location = new System.Drawing.Point(16, 89);
+            this.lblDirrecionAlumno.Name = "lblDirrecionAlumno";
+            this.lblDirrecionAlumno.Size = new System.Drawing.Size(66, 13);
+            this.lblDirrecionAlumno.TabIndex = 5;
+            this.lblDirrecionAlumno.Text = "DIRECCION";
             // 
-            // rdbresta
+            // lblTelefonoAlumno
             // 
-            this.rdbresta.AutoSize = true;
-            this.rdbresta.Location = new System.Drawing.Point(6, 67);
-            this.rdbresta.Name = "rdbresta";
-            this.rdbresta.Size = new System.Drawing.Size(61, 21);
-            this.rdbresta.TabIndex = 9;
-            this.rdbresta.Text = "resta";
-            this.rdbresta.UseVisualStyleBackColor = true;
+            this.lblTelefonoAlumno.AutoSize = true;
+            this.lblTelefonoAlumno.Location = new System.Drawing.Point(16, 115);
+            this.lblTelefonoAlumno.Name = "lblTelefonoAlumno";
+            this.lblTelefonoAlumno.Size = new System.Drawing.Size(64, 13);
+            this.lblTelefonoAlumno.TabIndex = 6;
+            this.lblTelefonoAlumno.Text = "TELEFONO";
             // 
-            // rdbdivi
+            // btnTelefono
             // 
-            this.rdbdivi.AutoSize = true;
-            this.rdbdivi.Location = new System.Drawing.Point(6, 132);
-            this.rdbdivi.Name = "rdbdivi";
-            this.rdbdivi.Size = new System.Drawing.Size(76, 21);
-            this.rdbdivi.TabIndex = 11;
-            this.rdbdivi.Text = "division";
-            this.rdbdivi.UseVisualStyleBackColor = true;
+            this.btnTelefono.Location = new System.Drawing.Point(85, 110);
+            this.btnTelefono.Name = "btnTelefono";
+            this.btnTelefono.Size = new System.Drawing.Size(176, 23);
+            this.btnTelefono.TabIndex = 7;
+            this.btnTelefono.UseVisualStyleBackColor = true;
             // 
-            // rdbmulti
+            // lblEmailAlumno
             // 
-            this.rdbmulti.AutoSize = true;
-            this.rdbmulti.Location = new System.Drawing.Point(6, 96);
-            this.rdbmulti.Name = "rdbmulti";
-            this.rdbmulti.Size = new System.Drawing.Size(113, 21);
-            this.rdbmulti.TabIndex = 10;
-            this.rdbmulti.Text = "multiplicacion";
-            this.rdbmulti.UseVisualStyleBackColor = true;
+            this.lblEmailAlumno.AutoSize = true;
+            this.lblEmailAlumno.Location = new System.Drawing.Point(16, 145);
+            this.lblEmailAlumno.Name = "lblEmailAlumno";
+            this.lblEmailAlumno.Size = new System.Drawing.Size(39, 13);
+            this.lblEmailAlumno.TabIndex = 8;
+            this.lblEmailAlumno.Text = "EMAIL";
             // 
-            // rdbexpo
+            // btnEmail
             // 
-            this.rdbexpo.AutoSize = true;
-            this.rdbexpo.Location = new System.Drawing.Point(6, 159);
-            this.rdbexpo.Name = "rdbexpo";
-            this.rdbexpo.Size = new System.Drawing.Size(99, 21);
-            this.rdbexpo.TabIndex = 13;
-            this.rdbexpo.Text = "exponente ";
-            this.rdbexpo.UseVisualStyleBackColor = true;
+            this.btnEmail.Location = new System.Drawing.Point(85, 135);
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.Size = new System.Drawing.Size(176, 23);
+            this.btnEmail.TabIndex = 9;
+            this.btnEmail.UseVisualStyleBackColor = true;
             // 
-            // rdbraiz
+            // btnPrimerAlumno
             // 
-            this.rdbraiz.AutoSize = true;
-            this.rdbraiz.Location = new System.Drawing.Point(6, 186);
-            this.rdbraiz.Name = "rdbraiz";
-            this.rdbraiz.Size = new System.Drawing.Size(52, 21);
-            this.rdbraiz.TabIndex = 12;
-            this.rdbraiz.Text = "raiz";
-            this.rdbraiz.UseVisualStyleBackColor = true;
+            this.btnPrimerAlumno.Location = new System.Drawing.Point(0, 19);
+            this.btnPrimerAlumno.Name = "btnPrimerAlumno";
+            this.btnPrimerAlumno.Size = new System.Drawing.Size(55, 23);
+            this.btnPrimerAlumno.TabIndex = 0;
+            this.btnPrimerAlumno.Text = "|<";
+            this.btnPrimerAlumno.UseVisualStyleBackColor = true;
             // 
-            // rdbfactrial
+            // btnAnteriorAlumno
             // 
-            this.rdbfactrial.AutoSize = true;
-            this.rdbfactrial.Location = new System.Drawing.Point(6, 213);
-            this.rdbfactrial.Name = "rdbfactrial";
-            this.rdbfactrial.Size = new System.Drawing.Size(79, 21);
-            this.rdbfactrial.TabIndex = 14;
-            this.rdbfactrial.Text = "factorial";
-            this.rdbfactrial.UseVisualStyleBackColor = true;
+            this.btnAnteriorAlumno.Location = new System.Drawing.Point(52, 19);
+            this.btnAnteriorAlumno.Name = "btnAnteriorAlumno";
+            this.btnAnteriorAlumno.Size = new System.Drawing.Size(55, 23);
+            this.btnAnteriorAlumno.TabIndex = 1;
+            this.btnAnteriorAlumno.Text = "<";
+            this.btnAnteriorAlumno.UseVisualStyleBackColor = true;
             // 
-            // cbonum1
+            // btnUltimoAlumno
             // 
-            this.cbonum1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbonum1.FormattingEnabled = true;
-            this.cbonum1.Items.AddRange(new object[] {
-            "Suma",
-            "Resta",
-            "Multiplicacion",
-            "Division",
-            "Exponete",
-            "Raiz",
-            "Factorial"});
-            this.cbonum1.Location = new System.Drawing.Point(426, 21);
-            this.cbonum1.Name = "cbonum1";
-            this.cbonum1.Size = new System.Drawing.Size(267, 24);
-            this.cbonum1.TabIndex = 10;
+            this.btnUltimoAlumno.Location = new System.Drawing.Point(138, 21);
+            this.btnUltimoAlumno.Name = "btnUltimoAlumno";
+            this.btnUltimoAlumno.Size = new System.Drawing.Size(55, 23);
+            this.btnUltimoAlumno.TabIndex = 2;
+            this.btnUltimoAlumno.Text = ">";
+            this.btnUltimoAlumno.UseVisualStyleBackColor = true;
             // 
-            // lbl5
+            // btnSiguienteAlumno
             // 
-            this.lbl5.AutoSize = true;
-            this.lbl5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5.Location = new System.Drawing.Point(312, 21);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(108, 27);
-            this.lbl5.TabIndex = 11;
-            this.lbl5.Text = "Opciones:";
+            this.btnSiguienteAlumno.Location = new System.Drawing.Point(183, 23);
+            this.btnSiguienteAlumno.Name = "btnSiguienteAlumno";
+            this.btnSiguienteAlumno.Size = new System.Drawing.Size(55, 19);
+            this.btnSiguienteAlumno.TabIndex = 3;
+            this.btnSiguienteAlumno.Text = ">|";
+            this.btnSiguienteAlumno.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarAlumo
+            // 
+            this.btnAgregarAlumo.Location = new System.Drawing.Point(6, 21);
+            this.btnAgregarAlumo.Name = "btnAgregarAlumo";
+            this.btnAgregarAlumo.Size = new System.Drawing.Size(81, 23);
+            this.btnAgregarAlumo.TabIndex = 3;
+            this.btnAgregarAlumo.Text = "AGREGAR";
+            this.btnAgregarAlumo.UseVisualStyleBackColor = true;
+            // 
+            // btnModificarAlumno
+            // 
+            this.btnModificarAlumno.Location = new System.Drawing.Point(93, 23);
+            this.btnModificarAlumno.Name = "btnModificarAlumno";
+            this.btnModificarAlumno.Size = new System.Drawing.Size(81, 23);
+            this.btnModificarAlumno.TabIndex = 4;
+            this.btnModificarAlumno.Text = "MODIFICAR";
+            this.btnModificarAlumno.UseVisualStyleBackColor = true;
+            // 
+            // lblRegristroalmno
+            // 
+            this.lblRegristroalmno.AutoSize = true;
+            this.lblRegristroalmno.Location = new System.Drawing.Point(113, 26);
+            this.lblRegristroalmno.Name = "lblRegristroalmno";
+            this.lblRegristroalmno.Size = new System.Drawing.Size(36, 13);
+            this.lblRegristroalmno.TabIndex = 4;
+            this.lblRegristroalmno.Text = "x de n";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 450);
-            this.Controls.Add(this.lbl5);
-            this.Controls.Add(this.cbonum1);
-            this.Controls.Add(this.grbopciones);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.lbl4);
-            this.Controls.Add(this.lbl3);
-            this.Controls.Add(this.txtNum2);
-            this.Controls.Add(this.lblnum2);
-            this.Controls.Add(this.lblNum1);
-            this.Controls.Add(this.btnNum1);
-            this.Controls.Add(this.txtNum1);
+            this.ClientSize = new System.Drawing.Size(849, 366);
+            this.Controls.Add(this.grbNavegacion);
+            this.Controls.Add(this.grbEdicion);
+            this.Controls.Add(this.grbDatos);
+            this.Controls.Add(this.lbllblDirrecionAlumno);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Text = "Calculadora Basica";
-            this.grbopciones.ResumeLayout(false);
-            this.grbopciones.PerformLayout();
+            this.Text = "administracion de alumnos";
+            this.grbDatos.ResumeLayout(false);
+            this.grbDatos.PerformLayout();
+            this.grbNavegacion.ResumeLayout(false);
+            this.grbNavegacion.PerformLayout();
+            this.grbEdicion.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,24 +280,27 @@ namespace calculadora_basica
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNum1;
-        private System.Windows.Forms.Button btnNum1;
-        private System.Windows.Forms.Label lblNum1;
-        private System.Windows.Forms.Label lblnum2;
-        private System.Windows.Forms.TextBox txtNum2;
-        private System.Windows.Forms.Label lbl3;
-        private System.Windows.Forms.Label lbl4;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.RadioButton rdbsuma;
-        private System.Windows.Forms.GroupBox grbopciones;
-        private System.Windows.Forms.RadioButton rdbexpo;
-        private System.Windows.Forms.RadioButton rdbraiz;
-        private System.Windows.Forms.RadioButton rdbdivi;
-        private System.Windows.Forms.RadioButton rdbmulti;
-        private System.Windows.Forms.RadioButton rdbresta;
-        private System.Windows.Forms.RadioButton rdbfactrial;
-        private System.Windows.Forms.ComboBox cbonum1;
-        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.Label lbllblDirrecionAlumno;
+        private System.Windows.Forms.GroupBox grbDatos;
+        private System.Windows.Forms.Button btnEmail;
+        private System.Windows.Forms.Label lblEmailAlumno;
+        private System.Windows.Forms.Button btnTelefono;
+        private System.Windows.Forms.Label lblTelefonoAlumno;
+        private System.Windows.Forms.Label lblDirrecionAlumno;
+        private System.Windows.Forms.Button btnDireccion;
+        private System.Windows.Forms.Button btnNombre;
+        private System.Windows.Forms.Label lblNombreAlumno;
+        private System.Windows.Forms.Button btnCodigo;
+        private System.Windows.Forms.Label lblCodigoAalumno;
+        private System.Windows.Forms.GroupBox grbNavegacion;
+        private System.Windows.Forms.GroupBox grbEdicion;
+        private System.Windows.Forms.Button btnPrimerAlumno;
+        private System.Windows.Forms.Button btnSiguienteAlumno;
+        private System.Windows.Forms.Button btnUltimoAlumno;
+        private System.Windows.Forms.Button btnAnteriorAlumno;
+        private System.Windows.Forms.Button btnModificarAlumno;
+        private System.Windows.Forms.Button btnAgregarAlumo;
+        private System.Windows.Forms.Label lblRegristroalmno;
     }
 }
 
